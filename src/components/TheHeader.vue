@@ -3,7 +3,10 @@
     <div class="header-container">
       <div class="logo">
         <router-link to="/">
-          <span class="logo-text">Portfolio</span>
+          <div class="header-logo-container">
+            <div class="header-logo-name">ROMAN KUCHIN</div>
+            <div class="header-logo-profession">Frontend Developer</div>
+          </div>
         </router-link>
       </div>
       
@@ -174,6 +177,30 @@ onBeforeUnmount(() => {
 .logo a {
   text-decoration: none;
   color: var(--color-text);
+}
+
+.header-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header-logo-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: 1.2;
+}
+
+.header-logo-profession {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
 }
 
 .logo-text {
@@ -443,6 +470,15 @@ onBeforeUnmount(() => {
   
   .logo {
     font-size: 1.25rem;
+  }
+  
+  .header-logo-name {
+    font-size: 1rem;
+  }
+  
+  .header-logo-profession {
+    font-size: 0.65rem;
+    letter-spacing: 1px;
   }
 }
 

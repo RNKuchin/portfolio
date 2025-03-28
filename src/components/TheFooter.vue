@@ -3,8 +3,10 @@
     <div class="footer-container">
       <div class="footer-top">
         <div class="footer-logo">
-          <h2 class="logo-text">Portfolio</h2>
-          <p>Frontend-разработчик</p>
+          <div class="logo-container">
+            <div class="logo-name">ROMAN KUCHIN</div>
+            <div class="logo-profession">Frontend Developer</div>
+          </div>
         </div>
         
         <div class="footer-nav">
@@ -20,10 +22,10 @@
           <h3>Контакты</h3>
           <ul>
             <li>
-              <a href="mailto:example@domain.com">example@domain.com</a>
+              <a href="mailto:roman.kuchin@gmail.com">roman.kuchin@gmail.com</a>
             </li>
             <li>
-              <a href="https://t.me/username" target="_blank">Telegram</a>
+              <a href="https://t.me/R_o_m_a_n_it" target="_blank">Telegram</a>
             </li>
           </ul>
         </div>
@@ -31,7 +33,7 @@
         <div class="footer-social">
           <h3>Социальные сети</h3>
           <div class="social-icons">
-            <a href="https://github.com/username" target="_blank" class="social-icon" title="GitHub">
+            <a href="https://github.com/RNKuchin" target="_blank" class="social-icon" title="GitHub">
               <span>GH</span>
             </a>
             <a href="https://linkedin.com/in/username" target="_blank" class="social-icon" title="LinkedIn">
@@ -109,6 +111,29 @@ const currentYear = computed(() => new Date().getFullYear());
 .footer-logo h2 {
   font-size: 1.75rem;
   margin-bottom: 0.5rem;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 0.25rem;
+}
+
+.logo-profession {
+  font-size: 0.95rem;
+  color: var(--color-footer-text-muted);
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
 }
 
 .logo-text {
@@ -246,6 +271,10 @@ const currentYear = computed(() => new Date().getFullYear());
   
   .footer-container {
     padding: 0 1rem;
+  }
+  
+  .logo-profession {
+    letter-spacing: 1px;
   }
 }
 </style> 

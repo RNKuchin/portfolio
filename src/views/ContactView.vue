@@ -11,7 +11,7 @@
             </div>
             <div class="contact-detail">
               <h3>Email</h3>
-              <p><a href="mailto:roman.kuchin@mail.com">roman.kuchin@mail.com</a></p>
+              <p><a href="mailto:roman.kuchin@gmail.com">roman.kuchin@gmail.com</a></p>
             </div>
           </div>
           
@@ -64,6 +64,7 @@
               required
               placeholder="email@example.com"
             >
+            <small class="form-note">Ваш email будет использован только для ответа на запрос</small>
           </div>
           
           <div class="form-group">
@@ -292,6 +293,12 @@ input:focus, textarea:focus {
   outline: none;
   border-color: var(--color-primary);
   box-shadow: 0 0 0 2px rgba(var(--color-primary-rgb), 0.1);
+}
+
+.form-note {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-top: 0.25rem;
 }
 
 .submit-button {

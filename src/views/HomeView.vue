@@ -1,14 +1,15 @@
 <template>
   <div class="home">
     <div class="intro-section">
-      <h1 class="animated-element">Привет, я <span class="highlight">Frontend-разработчик</span></h1>
-      <p class="lead animated-element">Создаю современные, отзывчивые и производительные веб-приложения</p>
+      <h1 class="animated-element">Привет, я <span class="highlight">Роман Кучин</span></h1>
+      <p class="lead animated-element">Frontend-разработчик, изучающий и применяющий современные веб-технологии</p>
+      <p class="sub-lead animated-element">Создаю адаптивные и удобные интерфейсы с использованием HTML, CSS, JavaScript и фреймворков Vue.js и React</p>
       <p class="stack animated-element">
-        <span class="tech-tag">Vue.js</span>
         <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">Vue.js</span>
+        <span class="tech-tag">React</span>
         <span class="tech-tag">HTML</span>
         <span class="tech-tag">CSS</span>
-        <span class="tech-tag">Pinia</span>
       </p>
       <div class="cta-buttons animated-element">
         <router-link to="/portfolio" class="btn btn-primary">Посмотреть работы</router-link>
@@ -91,6 +92,13 @@ h1 {
 .lead {
   font-size: var(--font-size-large);
   margin-bottom: var(--spacing-medium);
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.sub-lead {
+  font-size: var(--font-size-medium);
+  margin-bottom: var(--spacing-large);
   color: var(--color-text);
   font-weight: 500;
 }
