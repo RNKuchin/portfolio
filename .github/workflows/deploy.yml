@@ -3,7 +3,7 @@ name: Deploy Vue to GitHub Pages
 on:
   push:
     branches:
-      - main  # Запускать при пуше в main (или укажи свою ветку)
+      - main  # Запускать при пуше в main
 
 permissions:
   contents: read
@@ -31,8 +31,9 @@ jobs:
         run: npm run build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-artifact@v3  # Исправленная строка
         with:
+          name: github-pages
           path: ./dist
 
       - name: Deploy to GitHub Pages
