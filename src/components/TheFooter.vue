@@ -122,6 +122,7 @@ const currentYear = computed(() => new Date().getFullYear());
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
   background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
   -webkit-background-clip: text;
   background-clip: text;
@@ -131,6 +132,8 @@ const currentYear = computed(() => new Date().getFullYear());
 
 .logo-profession {
   font-size: 0.95rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   color: var(--color-footer-text-muted);
   letter-spacing: 1.4px;
   text-transform: uppercase;
