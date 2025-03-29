@@ -10,5 +10,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  base: 'rk-web.online'
+  base: 'rk-web.ru'
 })
